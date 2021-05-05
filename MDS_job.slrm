@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=NER_intent_BERT_job
+#SBATCH --output=/h/hngai/med-dialogue-system/output/%j.out
+#SBATCH --error=/h/hngai/med-dialogue-system/output/%j.err
+#SBATCH --open-mode=append
+#SBATCH --partition=rtx6000
+#SBATCH --cpus-per-task=4
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=22G
+#SBATCH --gres=gpu:1
+#SBATCH --nodes=1
+#SBATCH --qos=normal
+
+bash ~/MD-system/MDS_job.sh

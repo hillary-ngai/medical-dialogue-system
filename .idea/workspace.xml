@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d8f353-cc55-4c60-9322-ade3c949f4c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MDS_job.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDS_job.slrm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
