@@ -2,6 +2,7 @@
 data/*
 dataset/*
 runs/*
+deep_dialog/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
