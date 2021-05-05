@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=NER_intent_BERT_job
-#SBATCH --output=/h/hngai/med-dialogue-system/output/%j.out
-#SBATCH --error=/h/hngai/med-dialogue-system/output/%j.err
+#SBATCH --job-name=MDS_job
+#SBATCH --output=/h/hngai/MD-system/output/%j.out
+#SBATCH --error=/h/hngai/MD-system/output/%j.err
 #SBATCH --open-mode=append
 #SBATCH --partition=rtx6000
 #SBATCH --cpus-per-task=4
