@@ -2,8 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d8f353-cc55-4c60-9322-ade3c949f4c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_0_0_0.500_2.000.pth.tar" beforeDir="false" afterPath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_0_0_0.500_2.000.pth.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/checkpoint.pth.tar" beforeDir="false" afterPath="$PROJECT_DIR$/deep_dialog/checkpoints/checkpoint.pth.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MD-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MD-system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_0_0_0.510_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_0_0_0.515_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_0_0_0.516_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_0_0_0.562_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_106_106_0.686_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_114_114_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_12_12_0.526_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_130_130_0.683_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_13_13_0.526_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_13_13_0.596_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_145_145_0.686_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_15_15_0.526_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_15_15_0.596_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_17_17_0.526_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_19_19_0.596_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_20_20_0.532_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_20_20_0.576_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_21_21_0.596_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_22_22_0.594_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_22_22_0.596_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_23_23_0.652_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_3_3_0.516_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_60_60_0.615_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_61_61_0.599_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_61_61_0.663_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_66_66_0.615_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_66_66_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_67_67_0.663_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_76_76_0.686_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_84_84_0.615_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_85_85_0.644_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_eval_90_90_0.663_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_0_0_0.500_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_0_0_0.515_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_106_106_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_13_13_0.533_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_13_13_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_15_15_0.533_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_15_15_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_17_17_0.526_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_17_17_0.533_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_19_19_0.533_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_19_19_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_21_21_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_22_22_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_22_22_0.594_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_23_23_0.567_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_60_60_0.600_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_61_61_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_66_66_0.600_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_67_67_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_84_84_0.600_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_85_85_0.633_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_8_8_0.533_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_90_90_0.667_2.000.pth.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/agt_9_test_9_9_0.533_2.000.pth.tar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,5 +116,16 @@
       <updated>1620145916938</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
