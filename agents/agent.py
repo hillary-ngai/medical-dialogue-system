@@ -182,8 +182,7 @@ class AgentDQN(BaseAgent):
         else:  # Prediction Mode
             # self.experience_replay_pool.append(training_example)
             self.memory.push(training_example)
-    
-        
+
     def prep_minibatch(self):
         # random transition batch is taken from experience replay memory
         transitions, indices, weights = self.memory.sample(self.batch_size)
@@ -221,22 +220,21 @@ class AgentDQN(BaseAgent):
         # target
         with torch.no_grad():
             # self.target_model.sample_noise()
-            batch_next_state_flag = self.get_sym_flag(batch_next_state[:,(2*self.act_cardinality+num_diseases+1):(2*self.act_cardinality+self.slot_cardinality)])
-            max_next_q_values = self.target_model(batch_next_state,batch_next_state_flag).max(dim=1)[0].view(-1, 1)  # max q value
+            batch_next_state_flag = self.get_sym_flag(batch_next_state[:, (2*self.act_cardinality+num_diseases+1):(2*self.act_cardinality+self.slot_cardinality)])
+            max_next_q_values = self.target_model(batch_next_state, batch_next_state_flag).max(dim=1)[0].view(-1, 1)  # max q value
             expected_q_values = batch_reward + batch_episode_over*(self.gamma ** self.nsteps)*max_next_q_values
         diff = (expected_q_values - current_q_values)
         # print(diff)
         if self.priority_replay:
             self.memory.update_priorities(indices, diff.detach().squeeze().abs().cpu().numpy().tolist())
             loss = 0.5*torch.pow(diff,2).squeeze()*weights
-            #loss = self.huber(diff).squeeze() * weights
+
         else:
-            #loss = self.huber(diff)
-            loss = 0.5*torch.pow(diff,2) 
+            loss = 0.5*torch.pow(diff, 2)
+
         loss = loss.mean()
 
         return loss
-
 
     def single_batch(self):
         batch_vars = self.prep_minibatch()
@@ -244,9 +242,12 @@ class AgentDQN(BaseAgent):
         # Optimize the model
         self.optimizer.zero_grad()
         loss.backward()
-        #for param in self.model.parameters():
-        #    if param.requires_grad == True:    
-        #        param.grad.data.clamp_(-1, 1)
+
+        # gradient clipped in the range [-1, 1]
+        for param in self.model.parameters():
+            if param.requires_grad:
+                param.grad.data.clamp_(-1, 1)
+
         self.optimizer.step()
 
         # self.update_target_model()

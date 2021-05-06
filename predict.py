@@ -160,7 +160,7 @@ def test(test_size, dialog_manager,  output=False):
     div_turns = {}
     div_num = {}
     user_sim.data_split = test_set
-    print("data split len " + str(len(user_sim.start_set[user_sim.data_split])))
+    print("data split len " + str(len(user_sim.goal_set[user_sim.data_split])))
     res = {}
     ave_hit_rate = 0.0
     agent.predict_mode = True

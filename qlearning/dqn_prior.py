@@ -87,6 +87,7 @@ class KR_DQN(nn.Module):
 
         rule_res = self.knowledge_branch(state)
         relation_res = torch.matmul(x, F.softmax(self.tran_mat, 0))
+
         # dqn+knowledge+relation
         x = F.sigmoid(x) + F.sigmoid(relation_res) + rule_res
 
@@ -97,6 +98,7 @@ class KR_DQN(nn.Module):
     def predict(self, x, sym_flag):
         with torch.no_grad():
             a = self.forward(x, sym_flag).max(1)[1].view(1, 1)
+            
         return a.item()
 
     

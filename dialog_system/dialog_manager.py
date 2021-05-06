@@ -46,6 +46,7 @@ class DialogManager:
 
         #   CALL AGENT TO TAKE HER TURN
         self.state = self.state_tracker.get_state_for_agent()
+        print('state', self.state)
         self.agent_action, repeat = self.agent.state_to_action(self.state)
         
         #   Register AGENT action with the state_tracker

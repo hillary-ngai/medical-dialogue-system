@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d8f353-cc55-4c60-9322-ade3c949f4c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MDS_job.slrm" beforeDir="false" afterPath="$PROJECT_DIR$/MDS_job.slrm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDS_job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/MDS_job.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agents/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog_system/dialog_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog_system/dialog_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qlearning/dqn_prior.py" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning/dqn_prior.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersim/usersim.py" beforeDir="false" afterPath="$PROJECT_DIR$/usersim/usersim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersim/usersim_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/usersim/usersim_rule.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1s4xyPIIwt5INXD5ZWXoV0bJn2Z" />
   <component name="ProjectViewState">
@@ -71,5 +87,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

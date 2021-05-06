@@ -353,7 +353,7 @@ def training():
         if agt == 9:
             user_sim.data_split = train_set
             agent.predict_mode = True
-            print("data split len " + str(len(user_sim.start_set[user_sim.data_split])))
+            print("data split len " + str(len(user_sim.goal_set[user_sim.data_split])))
             # simulate dialogs and save experience
             simulation_epoch(simulation_epoch_size)
 

@@ -10,7 +10,7 @@ class UserSimulator:
         self.sym_dict = sym_dict
         self.act_set = act_set
         self.slot_set = slot_set
-        self.start_set = start_set
+        self.goal_set = start_set
 
         self.max_turn = params['max_turn']
         self.slot_err_probability = params['slot_err_probability']
@@ -21,7 +21,7 @@ class UserSimulator:
         """ Initialize a new episode (dialog)"""
 
         print("initialize episode called, generating goal")
-        self.goal = random.choice(self.start_set)
+        self.goal = random.choice(self.goal_set)
         #self.goal['request_slots']['ticket'] = 'UNK'
         episode_over, user_action = self._sample_action()
         assert (episode_over != 1), ' but we just started'

@@ -19,13 +19,13 @@ import dialog_config
 class RuleSimulator(UserSimulator):
     """ A rule-based user simulator for testing dialog policy """
 
-    def __init__(self, sym_dict=None, act_set=None, slot_set=None, start_set=None, params=None):
+    def __init__(self, sym_dict=None, act_set=None, slot_set=None, goal_set=None, params=None):
         """ Constructor shared by all user simulators """
 
         self.sym_dict = sym_dict # all symptoms
         self.act_set = act_set
         self.slot_set = slot_set
-        self.start_set = start_set
+        self.goal_set = goal_set
 
         self.max_turn = params['max_turn']
         self.slot_err_probability = params['slot_err_probability']
@@ -38,7 +38,12 @@ class RuleSimulator(UserSimulator):
         self.data_split = params['data_split']
         self.hit = 0
         self.repeat = 0
-        # self.left_goal = start_set
+
+        self.state = dict()
+        self.episode_over = False
+        self.dialog_status = dialog_config.NO_OUTCOME_YET
+        self.goal = None
+        self.constraint_check = dialog_config.CONSTRAINT_CHECK_FAILURE
 
     def initialize_episode(self):
         """ Initialize a new episode (dialog)
@@ -46,19 +51,18 @@ class RuleSimulator(UserSimulator):
         state['rest_slots']: keep all the slots (which is still in the stack yet)
         """
 
-        self.state = {}
+        self.state = dict()
         self.state['history_slots'] = {}
         self.state['inform_slots'] = {}
         self.state['request_slots'] = {}
         self.state['rest_slots'] = []
         self.state['turn'] = 0
-        # self.state['hit_slots'] = 0
 
         self.episode_over = False
         self.dialog_status = dialog_config.NO_OUTCOME_YET
 
-        # self.goal =  random.choice(self.start_set)
-        self.goal = self._sample_goal(self.start_set)
+        # randomly sample a user goal
+        self.goal = self._sample_goal(self.goal_set)
         self.constraint_check = dialog_config.CONSTRAINT_CHECK_FAILURE
 
         """ Debug: build a fake goal mannually """
@@ -73,13 +77,14 @@ class RuleSimulator(UserSimulator):
         self.state['diaact'] = "request"
         self.state['request_slots']['disease'] = 'UNK'
         self.state['nl'] = ''
-        #print(self.goal)
+
         if len(self.goal['explicit_inform_slots']) > 0:
             for slot in self.goal['explicit_inform_slots']:
                 if self.goal['explicit_inform_slots'][slot] == True:
                     self.state['inform_slots'][slot] = dialog_config.TRUE
                 if self.goal['explicit_inform_slots'][slot] == False:
                     self.state['inform_slots'][slot] = dialog_config.FALSE
+
         start_action = {}
         start_action['diaact'] = self.state['diaact']
         start_action['inform_slots'] = self.state['inform_slots']
@@ -89,10 +94,10 @@ class RuleSimulator(UserSimulator):
 
         return start_action
 
-    def _sample_goal(self, goal_set):
+    def _sample_goal(self):
         """ sample a user goal  """
+        sample_goal = random.choice(self.goal_set[self.data_split])
 
-        sample_goal = random.choice(self.start_set[self.data_split])
         return sample_goal
 
     def corrupt(self, user_action):
