@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67d8f353-cc55-4c60-9322-ade3c949f4c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDS_job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/MDS_job.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agents/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog_system/dialog_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog_system/dialog_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qlearning/dqn_prior.py" beforeDir="false" afterPath="$PROJECT_DIR$/qlearning/dqn_prior.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usersim/usersim.py" beforeDir="false" afterPath="$PROJECT_DIR$/usersim/usersim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usersim/usersim_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/usersim/usersim_rule.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

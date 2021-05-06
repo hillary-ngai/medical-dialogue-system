@@ -62,7 +62,7 @@ class RuleSimulator(UserSimulator):
         self.dialog_status = dialog_config.NO_OUTCOME_YET
 
         # randomly sample a user goal
-        self.goal = self._sample_goal(self.goal_set)
+        self.goal = self._sample_goal()
         self.constraint_check = dialog_config.CONSTRAINT_CHECK_FAILURE
 
         """ Debug: build a fake goal mannually """

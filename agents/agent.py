@@ -122,9 +122,9 @@ class AgentDQN(BaseAgent):
     def prepare_state_representation(self, state):
         user_action = state['user_action']
         current_slots = state['current_slots']
-        #print('current_slots', current_slots)
         agent_last = state['agent_action']
-        # user action
+
+        # # one-hot-encode user action
         user_act_rep = torch.zeros(1, self.act_cardinality, device=self.device)
         user_act_rep[0, self.act_set[user_action['diaact']]] = 1.0
         # user inform slots
@@ -134,6 +134,7 @@ class AgentDQN(BaseAgent):
         #         continue
         #     user_inform_slots_rep[0, self.slot_set[slot]] = user_action['inform_slots'][slot]
         # current slots
+
         current_slots_rep = torch.zeros(1, self.slot_cardinality, device=self.device)
         for slot in current_slots['inform_slots']:
             if slot not in self.slot_set:
@@ -169,13 +170,12 @@ class AgentDQN(BaseAgent):
 
     def register_experience_replay_tuple(self, s_t, a_t, reward, s_tplus1, episode_over):
         state_t_rep = self.prepare_state_representation(s_t)
-        action_t = self.action
         reward_t = reward
         state_tplus1_rep = self.prepare_state_representation(s_tplus1)
-        training_example = (state_t_rep, action_t, reward_t, state_tplus1_rep, episode_over)
+        training_example = (state_t_rep, a_t, reward_t, state_tplus1_rep, episode_over)
 
         # only record experience of dqn train, and warm start
-        if self.predict_mode == False:  # Training Mode
+        if not self.predict_mode:  # Training Mode
             if self.warm_start == 1:
                 # self.experience_replay_pool.append(training_example)
                 self.memory.push(training_example)
