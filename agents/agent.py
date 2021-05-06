@@ -381,7 +381,7 @@ class AgentDQN(BaseAgent):
         self.representation = self.prepare_state_representation(state)
         self.action, repeat = self.run_policy(self.representation, state)
         act_slot_response = copy.deepcopy(self.feasible_actions[self.action])
-        
+
         return {'act_slot_response': act_slot_response, 'act_slot_value_response': None}, repeat
 
     def action_index(self, act_slot_response):

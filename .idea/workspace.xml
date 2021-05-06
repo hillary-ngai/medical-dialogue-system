@@ -4,7 +4,7 @@
     <list default="true" id="67d8f353-cc55-4c60-9322-ade3c949f4c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agents/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/agents/agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog_system/dialog_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog_system/dialog_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_dialog/checkpoints/checkpoint.pth.tar" beforeDir="false" afterPath="$PROJECT_DIR$/deep_dialog/checkpoints/checkpoint.pth.tar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
