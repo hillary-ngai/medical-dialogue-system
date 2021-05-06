@@ -168,11 +168,12 @@ class AgentDQN(BaseAgent):
 
         return final_representation
 
-    def register_experience_replay_tuple(self, s_t, a_t, reward, s_tplus1, episode_over):
+    def register_experience_replay_tuple(self, s_t, reward, s_tplus1, episode_over):
         state_t_rep = self.prepare_state_representation(s_t)
+        action_t = self.action
         reward_t = reward
         state_tplus1_rep = self.prepare_state_representation(s_tplus1)
-        training_example = (state_t_rep, a_t, reward_t, state_tplus1_rep, episode_over)
+        training_example = (state_t_rep, action_t, reward_t, state_tplus1_rep, episode_over)
 
         # only record experience of dqn train, and warm start
         if not self.predict_mode:  # Training Mode
@@ -380,6 +381,7 @@ class AgentDQN(BaseAgent):
         self.representation = self.prepare_state_representation(state)
         self.action, repeat = self.run_policy(self.representation, state)
         act_slot_response = copy.deepcopy(self.feasible_actions[self.action])
+        
         return {'act_slot_response': act_slot_response, 'act_slot_value_response': None}, repeat
 
     def action_index(self, act_slot_response):

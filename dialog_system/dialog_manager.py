@@ -68,7 +68,7 @@ class DialogManager:
 
         #  Inform agent of the outcome for this timestep (s_t, a_t, r, s_{t+1}, episode_over)
         if record_training_data:
-            self.agent.register_experience_replay_tuple(self.state, self.agent_action, self.reward,
+            self.agent.register_experience_replay_tuple(self.state, self.reward,
                                                         self.state_tracker.get_state_for_agent(), self.episode_over)
         self.hit_rate += hit
         return self.episode_over, self.reward, self.dialog_status, self.hit_rate
